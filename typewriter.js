@@ -6,4 +6,4 @@ for (const char of sentence) {
   }, delay);
   delay += 50;
 }
-process.stdout.write('\n');
+setTimeout(() => process.stdout.write('\n'), 50 * sentence.length)
